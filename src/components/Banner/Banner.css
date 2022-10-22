@@ -1,0 +1,28 @@
+.maim-banner-container {
+    display: flex;
+    padding: 100px;
+    width: 400px;
+}
+.maim-banner-text h2 {
+    color: #C92071;
+    font-family: 'inter';
+    font-size: normal;
+}
+h1 {
+    display: flex;
+    font-size: 60px;
+    width: 400px;
+    margin: 0;
+}
+
+
+
+img{
+    width: 200px;
+}
+button {
+    background-color: #C92071;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
