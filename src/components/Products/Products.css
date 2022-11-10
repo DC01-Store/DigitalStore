@@ -75,10 +75,6 @@ body {
   color: #474747;
 }
 
-.discount-hidden {
-  visibility: hidden;
-}
-
 .sneaker-image img {
   object-fit: cover;
   filter: drop-shadow(-3.61398px 4.51747px 6.51852px rgba(0, 0, 0, 0.0274815));
@@ -108,6 +104,7 @@ body {
   letter-spacing: 0.75px;
   text-decoration: line-through;
   color: #8F8F8F;
+ 
 }
 
 .price {
@@ -116,4 +113,6 @@ body {
   line-height: 38px;
   letter-spacing: 0.75px;
   color: #1F1F1F;
+  display: inline-block;
 }
+
