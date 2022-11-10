@@ -2,26 +2,23 @@ import './Banner.css'
 
 export default function Banner(options) {
     return (
-        <div className='banner'>
-            <section className='main-banner'>
-                <div className='main-banner-container'>
-                    <div className='main-banner-text'>                    
-                        <h2>Melhores ofertas personalizadas</h2>
-                        <h1>Queima de Estoque Nike 🔥</h1>
-                        <p>
-                            Consequat culpa exercitation mollit nisi excepteur do
-                            do tempor laboris eiusmod irure consectetur.
-                        </p>
-                        <button className='main-banner-button'>
-                            ver ofertas
-                        </button>
-                    </div>
-                    <div className='main-banner-imagem'>
-                        <img src="/images/tenis_banner.png" alt="tenis_banner" />   
-                    </div>
-
+        <section className='main-banner'>
+            <div className='main-banner-container'>
+                <div className='main-banner-text'>                    
+                    <h2>Melhores ofertas personalizadas</h2>
+                    <h1>Queima de Estoque Nike 🔥</h1>
+                    <p>
+                        Consequat culpa exercitation mollit nisi excepteur do
+                        do tempor laboris eiusmod irure consectetur.
+                    </p>
+                    <button className='main-banner-button'>
+                        ver ofertas
+                    </button>
                 </div>
-            </section>
+                <div className='main-banner-imagem'>
+                    <img src="/images/tenis_banner.png" alt="tenis_banner" />   
+                </div>
         </div>
+        </section>
     )
 }
