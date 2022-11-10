@@ -26,27 +26,27 @@ const UsingFetch = () => {
       <section className='best-seller-sneakers'>
         <div className="container">
           <div className="content">
-              {sneakers.map(({discount, price, description, category}) => (
-                    <div className="card">
-                      <div className="content-wrap">
-                        { discount !== 0
-                                  ? (<div className="discount">{discount}{"% OFF"}</div>)
-                                  : (<div className="discount" style={{visibility: "hidden"}}></div>)
-                              } 
-                          <div className='sneaker-image'>
-                            <img src="/images/sneaker.png" alt="tenis_banner" />   
-                          </div>
-                      </div>
-                        <div className="category">{category}</div>
-                        <div className="description">{description}</div>
-                        <div> 
-                          { discount
-                            ? (<div className="firstprice">{price}<span className="price"> <span style={{visibility: "hidden"}}>.</span>  {(price-((discount/100)*price)).toFixed(2)}</span></div>)
-                            : (<div className="price">{price}</div>)
-                          }
-                        </div>   
+            {sneakers.map(({discount, price, description, category}) => (
+                  <div className="card">
+                    <div className="content-wrap">
+                      { discount !== 0
+                                ? (<div className="discount">{discount}{"% OFF"}</div>)
+                                : (<div className="discount" style={{visibility: "hidden"}}></div>)
+                            } 
+                        <div className='sneaker-image'>
+                          <img src="/images/sneaker.png" alt="tenis_banner" />   
+                        </div>
                     </div>
-                  ))
+                      <div className="category">{category}</div>
+                      <div className="description">{description}</div>
+                      <div> 
+                        { discount
+                          ? (<div className="firstprice">{price}<span className="price"> <span style={{visibility: "hidden"}}>.</span>  {(price-((discount/100)*price)).toFixed(2)}</span></div>)
+                          : (<div className="price">{price}</div>)
+                        }
+                      </div>   
+                  </div>
+                ))
               }
           </div>
         </div>

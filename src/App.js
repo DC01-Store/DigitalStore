@@ -7,15 +7,10 @@ import Products from './components/Products/Products';
 const App = () => {
   return (
     <>
-    <main>
-      <div className='banner'>
+      <main>
         <Banner/>
-      </div>
-
-      <Products/>
-
-    </main>
-
+        <Products/>
+      </main>
     </>
   );
 }
